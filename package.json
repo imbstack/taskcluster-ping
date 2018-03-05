@@ -1,0 +1,12 @@
+{
+  "name": "taskcluster-ping",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "Dustin J. Mitchell <dustin@mozilla.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "taskcluster-lib-app": "^3.0.0",
+    "taskcluster-lib-loader": "^2.0.0",
+    "typed-env-config": "^2.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+defaults:
+  server:
+    publicUrl:                      'https://ping.taskcluster.net'
+    port:                           !env:number PORT
+    env:                            'development'
+    forceSSL:                       false
+    trustProxy:                     false
+production:
+  server:
+    publicUrl:                    'https://ping.taskcluster.net'
+    port:                         80
+    env:                          'production'
+    forceSSL:                     true
+    trustProxy:                   true
+
+test:
+  server:
+    publicUrl:                    'http://localhost:60415'
+    port:                         60415
