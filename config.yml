@@ -1,17 +1,11 @@
 defaults:
   server:
-    publicUrl:                      'https://ping.taskcluster.net'
+    # TODO: is it possible to specify these as env but have default values??
+    publicUrl:                      !env PUBLIC_URL
     port:                           !env:number PORT
-    env:                            'development'
-    forceSSL:                       false
-    trustProxy:                     false
-production:
-  server:
-    publicUrl:                    'https://ping.taskcluster.net'
-    port:                         80
-    env:                          'production'
-    forceSSL:                     true
-    trustProxy:                   true
+    env:                            !env:bool NODE_ENV
+    forceSSL:                       !env:bool FORCE_SSL
+    trustProxy:                     !env:bool TRUST_PROXY
 
 test:
   server:
