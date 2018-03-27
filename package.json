@@ -6,6 +6,7 @@
   "license": "MPL-2.0",
   "dependencies": {
     "taskcluster-lib-app": "^3.0.0",
+    "taskcluster-lib-docs": "git+ssh://git@github.com:taskcluster/taskcluster-lib-docs#writeDocs",
     "taskcluster-lib-loader": "^2.0.0",
     "typed-env-config": "^2.0.0"
   }

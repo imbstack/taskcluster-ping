@@ -18,6 +18,20 @@ var load = loader({
     },
   },
 
+  docs: {
+    requires: ['cfg'],
+    setup: ({cfg}) => docs.documenter({
+      tier: 'integrations',
+      publish: false,
+    }),
+  },
+
+
+  writeDocs: {
+    requires: ['docs'],
+    setup: ({docs}) => docs.write({docsDir: process.env['DOCS_OUTPUT_DIR']}),
+  },
+
   server: {
     requires: ['cfg', 'router'],
     setup: ({cfg, router}) => {
