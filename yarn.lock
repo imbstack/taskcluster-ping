@@ -721,9 +721,9 @@ taskcluster-lib-app@^3.0.0:
     morgan-debug "^2.0.0"
     promise "^8.0.1"
 
-"taskcluster-lib-docs@git+ssh://git@github.com:taskcluster/taskcluster-lib-docs#writeDocs":
+"taskcluster-lib-docs@git+https://git@github.com/taskcluster/taskcluster-lib-docs#writeDocs":
   version "4.1.1"
-  resolved "git+ssh://git@github.com:taskcluster/taskcluster-lib-docs#0ab7f31008375f97cd7a32a7d9ccd262a541b81a"
+  resolved "git+https://git@github.com/taskcluster/taskcluster-lib-docs#0ab7f31008375f97cd7a32a7d9ccd262a541b81a"
   dependencies:
     app-root-dir "^1.0.2"
     aws-sdk "^2.147.0"
