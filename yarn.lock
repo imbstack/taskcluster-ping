@@ -441,6 +441,16 @@ mime@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
+minimist@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
+
+mkdirp@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
+  dependencies:
+    minimist "0.0.8"
+
 morgan-debug@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/morgan-debug/-/morgan-debug-2.0.0.tgz#ba4756bb76cbe7e55889656b9f117f0512444367"
@@ -721,15 +731,16 @@ taskcluster-lib-app@^3.0.0:
     morgan-debug "^2.0.0"
     promise "^8.0.1"
 
-taskcluster-lib-docs@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/taskcluster-lib-docs/-/taskcluster-lib-docs-4.2.0.tgz#8ef83ba560879f45edaca639303060ce835c65f6"
+taskcluster-lib-docs@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/taskcluster-lib-docs/-/taskcluster-lib-docs-4.2.1.tgz#0b12fadb72ab751fac3588573a763430935ac2fb"
   dependencies:
     app-root-dir "^1.0.2"
     aws-sdk "^2.147.0"
     babel-runtime "^6.26.0"
     debug "^3.1.0"
     lodash "^4.13.1"
+    mkdirp "^0.5.1"
     mz "^2.7.0"
     promise "^8.0.1"
     recursive-readdir-sync "^1.0.6"
