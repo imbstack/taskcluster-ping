@@ -2,6 +2,7 @@
 const loader = require('taskcluster-lib-loader');
 const libApp = require('taskcluster-lib-app');
 const config = require('typed-env-config');
+const docs = require('taskcluster-lib-docs');
 
 var load = loader({
   cfg: {
