@@ -45,7 +45,7 @@ var load = loader({
       });
 
       // Mount API router
-      app.use('/v1', router);
+      app.use('/api/ping/v1', router);
 
       // Create server
       return app.createServer();
